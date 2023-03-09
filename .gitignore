@@ -1,0 +1,22 @@
+# Ignore local development settings
+.env
+
+# Ignore virtual environment files
+venv/
+
+# Ignore PyCharm files
+.idea/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore backup files created by text editors
+*~
+
+# Ignore log files
+flagged/
+*.log
+
+# Ignore local configuration files
+.env
+local_settings.py
