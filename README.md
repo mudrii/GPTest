@@ -1,3 +1,9 @@
+# Intention
+This is a simple demo of OpenAI's ChatGPT API. It is a simple chatbot that can be used to generate responses to a given prompt. It is based on the OpenAI's [ChatGPT API](https://beta.openai.com/docs/api-reference/chat-completions/create). The demo is built using [Gradio](https://gradio.app/).
+
+## Setup OpenAI API Key
+You need to have an OpenAI API key to use this demo. You can get one by signing up for an account on [OpenAI](https://beta.openai.com/). Once you have an account, you can get your API key from [here](https://beta.openai.com/account/api-keys).
+
 ## Install python depandancyes
 
 `
@@ -24,7 +30,6 @@ The request body of ChaGPT API consists of the following parameters. Only the fi
 * **logit_bias (map)**: It helps to change the likelihood of specified text’s presence in the output, By default it is null.
 * **user (string)**: It is a unique identifier that denotes the end user and is helpful for tracking and monitoring abuse by OpenAI.
 
-
 ## What is Role in ChatGPT API ?
 In ChatGPT API, each prompt object inside the message array has to be associated with one of the three roles – system, user, and assistant.
 
@@ -44,6 +49,19 @@ text-davinci-003 | Can do any language task with better quality, longer output, 
 text-davinci-002 | Similar capabilities to text-davinci-003 but trained with supervised fine-tuning instead of reinforcement learning | 4,097 tokens | Up to Jun 2021
 code-davinci-002 | Optimized for code-completion tasks | 8,001 tokens | Up to Jun 2021
 
+### GPT-3
+GPT-3 models can understand and generate natural language. These models were superceded by the more powerful GPT-3.5 generation models. However, the original GPT-3 base models (davinci, curie, ada, and babbage) are current the only models that are available to fine-tune.
+
+LATEST MODEL | DESCRIPTION | MAX REQUEST | TRAINING DATA
+------- | ------- | ------- | -------
+text-curie-001 | Very capable, faster and lower cost than Davinci. | 2,049 tokens | Up to Oct 2019
+text-babbage-001 | Capable of straightforward tasks, very fast, and lower cost. | 2,049 tokens | Up to Oct 2019
+text-ada-001 | Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost. | 2,049 tokens | Up to Oct 2019
+davinci | Most capable GPT-3 model. Can do any task the other models can do, often with higher quality. | 2,049 tokens | Up to Oct 2019
+curie | Very capable, but faster and lower cost than Davinci. | 2,049 tokens | Up to Oct 2019
+babbage | Capable of straightforward tasks, very fast, and lower cost. | 2,049 tokens | Up to Oct 2019
+ada | Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost. | 2,049 tokens | Up to Oct 2019
+
 ### Codex
 The Codex models are descendants of our GPT-3 models that can understand and generate code. Their training data contains both natural language and billions of lines of public code from GitHub. Learn more.
 
@@ -56,16 +74,13 @@ LATEST MODEL | DESCRIPTION | MAX REQUEST | TRAINING DATA
 code-davinci-002 | Most capable Codex model. Particularly good at translating natural language to code. In addition to completing code, also supports inserting completions within code. | 8,001 tokens | Up to Jun 2021
 code-cushman-001 | Almost as capable as Davinci Codex, but slightly faster. This speed advantage may make it preferable for real-time applications. Up to | 2,048 tokens
 
-
 ### Run the chatbot code
 `
 python main.py
 `
 
-
 ### Access Chat Boot in the browser
 <http://127.0.0.1:7860>
-
 
 ## Additional reference documentation
 * [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
