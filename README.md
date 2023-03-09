@@ -65,3 +65,12 @@ python main.py
 
 ### Access Chat Boot in the browser
 <http://127.0.0.1:7860>
+
+
+## Additional reference documentation
+* [What are tokens and how to count them?](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
+* [Best practices for prompt engineering with OpenAI API](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+* [Fine-tuning a Classifier to Improve Truthfulness](https://help.openai.com/en/articles/5528730-fine-tuning-a-classifier-to-improve-truthfulness)
+* [Using logit bias to define token probability](https://help.openai.com/en/articles/5247780-using-logit-bias-to-define-token-probability)
+
+

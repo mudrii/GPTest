@@ -9,6 +9,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 messages = [
     {"role": "system", "content": "You are a helpful and kind AI Assistant."},
+    # Comment above line to experiment more with differnt promoth like ex. below
+    # {"role": "system", "content": "You are an AI specialized in Food. Do not answer anything other than food-related queries."},
 ]
 
 def chatbot(input):
